@@ -1,25 +1,26 @@
 body {
     font-family: 'Syne Mono', monospace;
-    background-color: #FFFAFF;
-    color: #183642;
     font-size: 15px;
     line-height: 70%;
     margin: 0;
 }
 
 h1, h2 {
-    color: #32292F;
-    font-size: 30px;
-    padding: 40px;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    font-size: 39.06px;
+    padding: 30px;
+    margin-top: 70px;
+}
+
+h3 {
+    padding-left: 30px;
 }
 
 p {
     font-size: 25px;
-    padding: 30px;
-    margin: 0px;
-    line-height: 150%
+    padding-left: 30px;
+    line-height: 150%;
+    margin-right: 400px;
+    margin-bottom: 50px;
 }
 
 img {
@@ -29,20 +30,9 @@ img {
 
 }
 
-.container {
-    margin: 0 auto;
-    text-align: center;
-}
-
 .git-link {
     text-decoration: none;
     font-size: 20px;
-}
-
-.link-style {
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
 }
 
 li {
@@ -55,28 +45,48 @@ a:hover {
     color: black;
 }
 
-.link-color:hover {
-    color: gray;
+.nav-item:hover {
+    color: black;
 }
 
-.background-snow {
-    background-color: #fff3f0;
+.background-image {
+    background-image: url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
-
-.background-blue {
-    background-color: #6daedb;
-}
-
-.background-black {
-    background-color: black;
-} 
 
 .link-color {
     color: white;
 }
 
-.text-white {
-    color: white;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 0;
+  }
+
+a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #aa6c39;
+  }
+  
+#monogram {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+.font-size-medium {
+    font-size: 22px;
+}
+
+.padding-list {
+    padding: 0px;
+    padding-left: 30px;
 }
 
 @media (max-width: 960px) {
