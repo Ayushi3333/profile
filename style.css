@@ -1,5 +1,5 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Andika New Basic', sans-serif;
     font-size: 15px;
     margin: 0;
 }
@@ -19,11 +19,10 @@ h3 {
 
 p {
     font-size: 23px;
-    padding-left: 30px;
+    text-align: center;
     padding-right: 30px;
     line-height: 150%;
-    text-align: center;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 ul {
@@ -51,6 +50,7 @@ a:hover {
 
 .navbar-nav {
    margin-top: 5px;
+   margin-bottom: 5px;
 }
 
 .nav-item {
@@ -62,9 +62,6 @@ a:hover {
     color: silver;
 }
 
-.background-image {
-  background-color:white;
-}
 
 .link-color {
     color: black;
@@ -73,8 +70,6 @@ a:hover {
 .navbar {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    flex-grow: 0;
     background-color: rgba(241, 232, 232, 0.6);
   }
 
@@ -90,6 +85,7 @@ a {
     padding-top: 10px;
     margin: 0;
     color:black;
+    padding-left: 20px;
   }
 
 .font-size-medium {
@@ -97,8 +93,7 @@ a {
 }
 
 .padding-list {
-    padding: 0px;
-    padding-left: 30px;
+  padding: 0px;
 }
 
 .fa-js-square {
@@ -139,8 +134,9 @@ a {
 }
 
 .project-item span  {
-  font-size: 18px;
-  opacity: 0.5;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 25px;
 }
 
 .project-item > img {
@@ -161,13 +157,12 @@ a {
 .project-item a {
   text-decoration: none;
 }
-.profile-title {
-  width: 150%;
-}
 
 .profile-title img {
-  width: 60px;
-  text-align: center;
+  width: 260px;
+  margin-top: 30px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 ul img {
@@ -186,20 +181,17 @@ ul img {
 .fa-laptop-code {
   font-size: 23px;
 }
- .bio {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+
+.bio {
+  text-align: center;
 }
 
 .bio p {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
-.break {
-  flex-basis: 50%;
-  height: 0;
+.profile-title img {
+  align-items: center;
 }
 /* 
 .ayushi-image {
