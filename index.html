@@ -4,42 +4,118 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://kit.fontawesome.com/7258be3744.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>Ayushi's Profile Page</title>
 </head>
 
-<body>
+<body class="background-image">
+  <div class="container">
+    <div class="navbar navbar-expand-sm navbar-light">
+      <p id="monogram">AG</p>
+      <ul class="navbar-nav">
+        <li>
+          <a class="nav-item" href="#projects-info">Projects</a>
+        </li>
+        <li>
+          <a class="nav-item" href="#contact-info">Contact</a>
+        </li>
+      </ul>
+    </div>
     <div class="container">
-        <div class="card background-snow">
-            <h1>Hello, I am Ayushi👩🏽</h1>
-            <img src="images/ayushi.JPG" alt="">
+      <div class="bio">
+        <div class="profile-title">
+          <img src="images/ayushi.JPG" alt="Ayushi's profile picture">
+          <h1>Ayushi Gupta</h1>
+          <h3>Fullstack Developer</h3>
         </div>
-        <div class="card background-blue">
-            <p>I am a software developer in training, based in Barcelona.🏖 I come from an Engineering background and
-                love all things logic and numbers. When I am not coding, you can find me doing quizzes, playing board
-                games and attempting to play decent badminton.🏸
-            </p>
-            <p><a class="git-link" href="https://github.com/Ayushi3333" , target="_blank"><strong>Discover my
-                        GitHub</strong></a></p>
+          <p>I am a software developer by profession. I come from an Engineering background and
+                    love all things logic and numbers. I am passionate about writing clean, 
+                    efficient and understandable code. I have experience building applications with 
+                    Ruby on Rails, Javascript, CSS and HTML. 
+                    I regularly use GitHub and its services to collaborate with other developers.
+                    <i class="fas fa-laptop-code"></i>
+          </p>
+      </div>
+        <h2>Skills</h2>
+        <ul class="lang-icons">
+          <li><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png", alt="Rails Icon" id="rails"></a></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/297px-Ruby_logo.svg.png", alt="Ruby Icon"></a></li>
+          <li><i class="fab fa-js-square"></i></li>
+          <li><i class="fab fa-git"></i></li>
+          <li><i class="fab fa-css3-alt"></i></li>
+          <li><i class="fab fa-github"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-bootstrap"></i></li>
+          <li><i class="fab fa-figma"></i></li>
+          <li><i class="fab fa-python"></i></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="PostgreSQL Icon"></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Database-mysql.svg" alt="MySQL Icon"></li>
+        </ul>
+        <h2 id="projects-info">Recent Projects</h2>
+        <div class="projects-list">  
+            <div class="project-item">
+              <img src="images/matchmapp.png" alt="Matchmapp">
+              <br>
+              <a href="https://www.matchmapp.live">MatchMapp</a>
+              <br>
+              <span>MatchMapp is a mobile-first application that lets you find bars screening your favorite 
+                    matches around you. I collaborated with 4 other developers using scrum techniques to build 
+                    the front and backend in 12 days. We worked primarily with Rails, Javascript, CSS, Bootstrap and HTML.</span>
+            </div>
+       
+          <div class="project-item">
+              <img src="images/buffer-laptop.png" alt="Buffer">
+              <br>
+              <a href="https://airbnb-ayushi3333.herokuapp.com">Buffer</a>
+              <br>
+            <span>Buffer was created for party goers who want to find buddies to keep them from 
+                    acting on their vices after a few drinks. Our team of developers crafted user 
+                    stories, designed the Figma, built a prototype and built the full stack in a matter of 5 days.
+            </span>
+          </div>
+          <div class="project-item">
+              <div  class="cocktail">
+            <img src="images/cocktail-mobile.png" alt="Cocktails Manager">
+            <img src="images/cocktail-laptop.png" alt="Cocktails Manager">
         </div>
-        <div class="card background-black">
-            <h2 class="text-white">Connect with me</h2>
+            <br>
+            <a href="https://cocktailsmanager.herokuapp.com/cocktails">Cocktails Manager</a>
+            <br>
+            <span>This handy desktop-based app lets you create and store your favorite cocktail recipes 
+                    for when you want to impress guests with your wide range of cocktail knowledge. I built 
+                    Cocktails Manager in a few hours in Rails using the MVC approach. 
+                    This personal project was then deployed to Heroku.</span>
+          </div>
+          <div class="project-item">
+            <img src="images/terracerentals-laptop.png" alt="Terrace Rentals">
+            <br>
+            <a href="https://terracerentals.herokuapp.com/">Terrace Rentals</a>
+            <br>
+            <span>Terrace Rentals was built out of the need for finding
+                     breathtaking venues to host your next party. TR connects people willing to rent their unused terrace 
+                     for a few hours to event organisers on the hunt for exciting venues to 
+                     host their next event. This was built primarily in Rails, JS, CSS and HTML.</span>
+          </div> 
         </div>
-        <div class="card background-black">
-            <ul class="link-style">
-                <li><a href="https://www.instagram.com/ayushi.3101/" , target="_blank"><i
-                            class="fab fa-instagram link-color"></i></a></li>
-                <li><a href="https://twitter.com/AyushiGupts" , target="_blank"><i
-                            class="fab fa-twitter link-color"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/ayushi-gupta-831b4890/" , target="_blank"><i
-                            class="fab fa-linkedin-in link-color"></i></a></li>
-                <li><a href="https://www.facebook.com/ayushi.gupta.3101/" , target="_blank"><i
-                            class="fab fa-facebook-f link-color"></i></a></li>
-            </ul>
+        <p><a class="git-link" href="https://github.com/Ayushi3333" , target="_blank"><strong>Discover my
+            GitHub</strong></a></p>
+        <div class="card">
+          <p class="font-size-medium" id="contact-info">Connect with me</p>
+        </div>
+        <div class="card">
+          <ul class="padding-list">
+            <li><a href="https://twitter.com/AyushiGupts" , target="_blank"><i
+                            class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ayushi-gupta-831b4890/" , target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a></li>             
+          </ul>
         </div>
     </div>
+  </div>
 </body>
 
 </html>
